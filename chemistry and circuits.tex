@@ -1,0 +1,79 @@
+\documentclass{exam}
+\usepackage[utf8]{inputenc}
+\usepackage{xskak}
+\usepackage{chemfig}
+\usepackage{circuitikz}[american voltages]
+\usepackage{amssymb}
+\usepackage{tikz}
+\usepackage{modiagram}
+
+\author{\huge \textbf{S.Sandhya , ID : B192568 }}
+
+\begin{document}
+\maketitle
+
+\Large \textbf{3 Chemistry}\\ \\
+ \hspace{7cm} \textbf{3.1 Chemical Formulae} \\ \\
+\chemfig{cl-[:30]=[2]-[:30]=[:-30](-[:30])-[-2](-[:-30]N=[:30]-[2]=[:150]
+(-[2]HN-[:30](-[2])-[:-30]-[:30]-[:-30]-[:30]N(-[2]-[:30]-[:-30]OH)-[:-30]-[:30]))=[:210]-[:150]}
+\\ \\SThis is the moecule hydroxychloroquine , that recently shot to fame as proposed cure for COVID-19 \\ \\
+\Large \textbf{3.2 Molecular Orbital Dagram}
+\begin{center}
+\begin{MOdiagram}
+ \atom{left}{
+     2p = {;up,up,up}
+  }
+  \atom{right}{
+     2p = {;pair,up,up}
+  }
+  \molecule{
+      2pMO = {;pair,pair,pair,up}
+  }
+\end{MOdiagram}
+\end{center}
+
+\begin{center}
+%\vspace{1cm}
+\textbf{N \hspace{1cm} NO \hspace{1cm} O}
+\end{center}
+ hhhdjhdjh  fhjh dhjhee uhuir bvjhjd bccndjhrue thei fghdr ejdjj bvjue dbfhjut djbvbhdjieos nvkksood jdiji
+\\ \\
+ \Large \textbf{4 Electrical Circuits}\\ \\ \\
+\begin{center}
+\begin{circuitikz}[american voltages]
+\draw (0,0) to [\bipole{capacitor},o- ,l=$C_1$] (2,0)
+  to [R,*-, l_=$R_1$] (2,3)
+ to [short,-*] (4,3)
+ to [R,l_=$R_L$,i=$i_C$] (4,0.8)
+ to [short,*-o] (8,0.8)
+ (2,0) to [R,-*, l_=$R_2$] (2,-3)
+ to [short,-o] (0,-3)
+ (4,3) to [short,-o] (9,3)
+ (2,0) to [short,-|,i=$i_B$] (3.5,0)
+ (4,-0.5) to [short,i=$i_E$] (4,-1.5)
+  to [R,l_=$R_E$] (4,-3)
+  to [short,*-*] (2,-3)
+  (4,-1.5) to [short] (6,-1.5)
+  to [\bipole{capacitor},l_=$C_2$] (6,-3)
+  to [short,*-*] (4,-3)
+  (6,-3) to [short,-o] (8,-3)
+  to [short,-o] (9,-3)
+  (8,0.5) to [open, v^>=$V_{out}$] (8,-3)
+  (9,3) to [open, v^>=$V_{CC}$] (9,-3)
+(2.5,0) to [open, v^>=$V_B$] (2.5,-3)
+ (0,0) to [open, v^>=$V_0{sin({\omega}t)}$] (0,-3)
+ (6,-3) to node[ground]{} (6,-4)
+ (4.5,-1.5) to [open, v^>=$V_E$] (4.5,-3)
+ (4.5,0.8)to [open, v^>=$V_{CE}$] (4.5,-1)
+ (4,0.8) to [short,l_=$C$]  (4,0.5)
+ (4,-1.0) to [short,l=$E$] (4,-0.5)
+ (3.5,-0.3) to [short,l=$B$] (3.5,0.3)
+ (3.5,0.1)to [short] (4,0.5)
+ (3.5,-0.1)to [short,i=$ $] (4,-0.5)
+\end{circuitikz} \\ \\
+If you recall JEE physics , this is a circuit diagrqm of an npn transistor used djkjskdjfs fjkier tjie jjjdhhd fjnvm,
+is that youknow how to use circuitikz to draw with the components used above ,and mark voltages and currents.
+
+\end{center}
+
+\end{document}
